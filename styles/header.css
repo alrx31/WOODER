@@ -198,7 +198,7 @@ header::after {
     height: calc(var(--index) *3);
     width: calc(var(--index) *3);
 
-    background: url('./../media/icons8-about.svg') no-repeat;
+    background: url('./../media/icons8-about.webp') no-repeat;
     background-size: contain;
     cursor: pointer;
 
