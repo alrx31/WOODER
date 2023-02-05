@@ -1,0 +1,287 @@
+header{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:5px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+nav ul a {
+    margin: 0 20px;
+    font-family: 'roboto', sans-serif;
+    letter-spacing: 3px;
+    color:var(--white);
+    font-size: 20px;
+    transition: .3s all;
+    text-shadow: 0 0 2px var(--focus);
+}
+nav ul a:hover{
+    text-shadow: 0px 10px 5px var(--focus);
+    cursor:pointer;
+
+}
+
+.h1 {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Fjalla One',sans-serif;
+    margin-right: 40px;
+    letter-spacing: 8px;
+    text-shadow: 5px 8px 2px var(--focus);
+}
+.header1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 0;
+
+}
+.header2{
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    z-index: 0;
+    border-radius: 0 0 0 200px;
+}
+
+header h1{
+    position: relative;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: calc(var(--index) *10);
+    color: white;
+    text-shadow: 4px 4px 4px var(--orange),
+    -4px -4px 4px var(--focus);
+}
+header button {
+    width: calc(var(--index) * 25);
+    height:calc(var(--index) * 3);
+    position: relative;
+    left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    background:transparent;
+    border:3px solid var(--white);
+    color:var(--white);
+    font-family: 'Fjalla One', sans-serif;
+    font-size: calc(var(--index) * 2);
+    transition: .3s;
+
+}
+
+header button:hover{
+    background-color: var(--white);
+    color:black;
+    box-shadow: 0 0 10px  var(--white);
+}
+header button a {
+    cursor: pointer;
+}
+header::after {
+    content: '';
+
+    position:absolute;
+    bottom: -30px;
+    right: 10%;
+    width: 5px;
+    height: 60px;
+    opacity: .7;
+    background-color: var(--orange);
+    z-index: 999;
+
+}
+.share__block{
+    position: absolute;
+    top: 94%;
+    right: 3%;
+    cursor: pointer;
+}
+.share__block img{
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+.nav__burger {
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 3px;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.nav__burger p {
+    cursor: pointer;
+}
+
+.nav__burger .burger  {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nav__burger .burger span {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    left: 0;
+    top: 45%;
+    cursor: pointer;
+
+}
+
+.nav__burger .burger::before,.nav__burger .burger::after{
+    content:'';
+    position: absolute;
+    width: 90%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: var(--orange);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+    opacity: .3;
+    transition: .3s;
+    cursor: pointer;
+
+}
+.nav__burger .burger::before{
+    top: 15%;
+}
+
+.nav__burger .burger.active::before,
+.nav__burger .burger.active::after{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+
+
+
+
+.nav__info {
+
+    height: calc(var(--index) *3);
+    width: calc(var(--index) *3);
+
+    background: url('./../media/icons8-about.svg') no-repeat;
+    background-size: contain;
+    cursor: pointer;
+
+}
+
+
+.leftSide {
+    position: absolute;
+    left: 10%; 
+    top: 0;
+
+    transform: rotate(90deg) translateY(0%);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:fromUp 2.4s forwards normal;
+}
+
+.leftSide .ntn1{
+    width: 30px;
+    height: 3px;
+    background-color: var(--orange);
+    border-radius:5px;
+}
+
+.leftSide__num {
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(var(--index)*2.5);
+    color:var(--orange);
+    margin: 0 25px;
+    
+}
+.leftSide__DOT {
+    width: 10px;
+    height: 10px;
+    background-color: var(--orange);
+    border-radius:50%;
+    margin: 0 25px;
+}
+
+.mousePlusScroll{
+    position: absolute;
+    left: 0;
+    bottom: -60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+    font-size: 25px;
+    font-family: "Fjalla One", sans-serif;
+    transform: rotate(90deg);
+}
+
+.mousePlusScroll > *{
+    margin: 0 15px  ;
+}
+
+.mousePlusScroll img {
+    width: 40px;
+    transform: rotate(90deg);
+}
+.mousePlusScroll h5 {
+    opacity: .6;
+}
+
+.mouseScroll {
+    width: 30px;
+    height: 10px;
+    background-color: var(--orange);
+    opacity: .4;
+}
+
+.rightSide {
+    position: absolute;
+    top: 0%;
+    right: 15%;
+    color: var(--orange);
+    font-size: 20px;
+    opacity: 0.4;
+    font-size: "Fjalla One", sans-serif;
+    transform: rotate(90deg);
+    transition: 2s opacity;
+    animation: fromUp 2s forwards;
+}
+

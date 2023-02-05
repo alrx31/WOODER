@@ -1,0 +1,222 @@
+.section1 {
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-flow:row nowrap;
+    margin-bottom: 100px;
+}
+.section1 > *{
+    margin: 20px;
+}
+.section1__content{
+    width: 40%;
+    font-family: 'Fjalla One', sans-serif;
+    position: relative;
+
+    
+}
+.section1__content>*{
+    margin: 20px;
+}
+.section1__content h1{
+    font-size:100px;
+    color:var(--black);
+    position: relative;  
+
+}
+.section1__content h1::before{
+    content:'';
+
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    left: -25%;
+    height: 1px;
+    background-color: var(--black);
+}
+
+.section1__content.second h1::before{
+    content:'';
+
+    position: absolute;
+    width: 150px;
+    top: 50%;
+    left: 40%;
+    height: 1px;
+    background-color: var(--black);
+}
+
+.section1__content p{
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--gray);
+    position: relative;
+    display: block;
+}
+.section1__content p::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: -5%;
+    width: 30px;
+    height: 5px;
+    background-color: var(--orange);
+}
+.section1__content.second p::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    width: 30px;
+    height: 5px;
+    background-color: var(--orange);
+}
+
+.section1__content a {
+    font-size: 30px;
+    margin-top: 50px;
+    border:2px solid black;
+    display: block;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    transition: .2s;
+}
+.section1__content a:hover{
+    background-color: var(--black);
+    color:var(--white);
+    box-shadow: 0px 0px 10px var(--black);
+    cursor: pointer;
+}
+.section1__img{
+    width: 40%;
+    height: auto;
+}
+.section1__img img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.section1__img::before{
+    content:'FURNITURE';
+
+    position:absolute;
+    font-family: 'Fjalla One', sans-serif;
+    font-size:200px;
+    letter-spacing: 20px;
+    top: 10%;
+    right: -20%;
+
+    color:var(--orange);
+    opacity:.2;
+    z-index: 999;
+}
+.section1__img.second::before{
+    content:'DECOR';
+
+    position:absolute;
+    font-family: 'Fjalla One', sans-serif;
+    font-size:200px;
+    letter-spacing: 20px;
+    top: 10%;
+    left: -20%;
+
+    color:var(--orange);
+    opacity: 0.2;
+    z-index: 999;
+
+}
+
+.section1__content::before{
+    content:'01.';
+
+    position:absolute;
+    font-family: 'Fjalla One', sans-serif;
+    font-size:50px;
+    letter-spacing: 10px;
+    bottom: -20%;
+    left: -10%;
+
+    color:var(--black);
+    z-index: 999;
+}
+.section1__content::after{
+    content:'';
+
+    position: absolute;
+    left: -5%;
+    bottom: -45%;
+    width: 3px;
+    height: 70px;
+    background-color: var(--orange);
+}
+.section1__content.second::after{
+    content:'';
+
+    position: absolute;
+    left: 95%;
+    bottom: -45%;
+    width: 3px;
+    height: 70px;
+    background-color: var(--orange);
+}
+.section1__content.second::before{
+    content:'02.';
+
+    position:absolute;
+    font-family: 'Fjalla One', sans-serif;
+    font-size:50px;
+    letter-spacing: 10px;
+    bottom: -20%;
+    left: 90%;
+    color:var(--black);
+    z-index: 999;
+}
+
+
+.about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow: column nowrap;
+
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 50px;
+
+}
+.about > *{
+    margin: 20px 0;
+}
+
+.about h1 {
+    font-size:100px;
+    color:var(--black);
+    position:relative;
+}
+.about h1::before{
+    content:'';
+    position:absolute;
+    width: 100px;
+    height: 5px;
+    background-color: var(--orange);
+    left: 45%;
+    bottom: -10%;
+}
+.about p {
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--gray);
+}
+.section__blocks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}

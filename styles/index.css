@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url(./obn.css);
+@import url(./header.css);
+@import url(./main.css);
+/*
+    cubic-bezier(.2, .5, 0 , 1)
+*/
+
+:root{
+    --index:calc(1vw+1vh);
+    --white:whitesmoke;
+    --black:rgb(20,20,20);
+    --gray:#6d6c6c;
+    --orange:#c09d5b;
+    --focus:rgb(2 202 202 / .2);
+}
+body{
+    background-color: var(--white);
+}
+
+.element-animation{
+    opacity: 0;
+    transform: translateY(20%);
+}
+
+.element-animation.element-show {
+    transition: 1s all;
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background:rgb(66, 65, 65);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--orange);
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+
+
+  @keyframes fromUp{
+    form{
+        top: 0%;
+    }
+    to{
+        top: 35%;
+    }
+}
+
+
+
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row nowrap;
+
+  width: 100%;
+  height: 80px;
+  background:  #000 url(./../media/footer.png);
+  border-radius:10px 10px 0 0;
+  transition: 1s;
+
+}
+footer .h1 {
+  color: var(--white);
+  font-family: 'Fjalla One', sans-serif;
+  cursor: pointer;
+}
+footer p {
+
+}
