@@ -14,7 +14,7 @@
     --gray:#6d6c6c;
     --orange:#c09d5b;
     --focus:rgb(2 202 202 / .2);
-    --lgray:rgb(200,200,200);
+    --lgray:rgb(200 200 200 / .6);
 }
 body{
     background-color: var(--white);
