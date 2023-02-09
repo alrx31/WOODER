@@ -34,7 +34,7 @@
     position: absolute;
     width: 150px;
     top: 50%;
-    left: -25%;
+    left: -160px;
     height: 1px;
     background-color: var(--black);
 }
@@ -45,7 +45,7 @@
     position: absolute;
     width: 150px;
     top: 50%;
-    left: 40%;
+    left: 300px;
     height: 1px;
     background-color: var(--black);
 }
@@ -61,7 +61,7 @@
     content: "";
     position: absolute;
     top: 10%;
-    left: -5%;
+    left: -40px;
     width: 30px;
     height: 5px;
     background-color: var(--orange);
@@ -263,12 +263,22 @@
     border-bottom:16px solid transparent; 
 }
 .sec__bl{
-    width: 264px;
-    height: 264px;
+    width: calc(var(--index)*21);
+    height:calc(var(--index)*21);
     padding: 10px;
     border-radius:50%;
 
     border:2px dotted var(--gray);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.sec__bl img{
+    width: calc(var(--index)*20);
+    height:calc(var(--index)*20);
 }
 .sec__item>*{
     margin: 50px 0;
@@ -346,7 +356,7 @@
     cursor:pointer;
 }
 .video h1 {
-    font-size: 80px;
+    font-size: calc(var(--index)*5);
     font-family: 'Fjalla One', sans-serif;
     width: 60%;
     text-align:left;
@@ -362,13 +372,13 @@
     background-color: var(--lgray);
     top: 50%;
     transform:translateY(-50%);
-    left: -10%;
+    left: -120px;
 
 }
 .video p {
     color:var(--gray);
     font-family: 'roboto', sans-serif;
-    font-size: 30px;
+    font-size: calc(var(--index)*2.5);
     width: 60%;
     text-align: left;
 }
@@ -381,7 +391,7 @@
     background-color: var(--orange);
     top: 50%;
     transform:translateY(-50%);
-    left: -10%;
+    left: -110px;
 
 }
 
@@ -424,7 +434,7 @@
 
 }
 .aboutUs img{
-    width: 800px;
+    width:calc(var(--index)*50);
     height: auto;
 }
 
@@ -446,7 +456,7 @@
     background-color: var(--black);
     top: 50%;
     transform:translateY(-50%);
-    left: -11%;
+    left: -110px;
 }
 
 .ab__bl-text p{
@@ -462,7 +472,7 @@
     height: 10px;
     background-color: var(--orange);
     top: 10%;
-    left: -15%;
+    left: -80px;
 }
 .ab__bl-text a{
     display: flex;
